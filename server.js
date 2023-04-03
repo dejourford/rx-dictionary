@@ -43,7 +43,7 @@ app.get('/main.js', (request, response) => {
 
 
 // create get request for API
-app.get('/api/', (request, response) => {
+app.get('/api', (request, response) => {
     response.json(drugs)
 })
 
