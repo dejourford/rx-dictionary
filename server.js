@@ -43,7 +43,7 @@ app.get('/main.js', (request, response) => {
 
 
 // create get request for API
-app.get('/api:drug', (request, response) => {
+app.get('/api/:drug', (request, response) => {
     const userInput = request.params.drug.toLowerCase()
     if (drugs[userInput]) {
         response.json(drugs[userInput])
