@@ -43,8 +43,14 @@ app.get('/main.js', (request, response) => {
 
 
 // create get request for API
-app.get('/api', (request, response) => {
-    response.json(drugs)
+app.get('/api:drug', (request, response) => {
+    const userInput = request.params.drug.toLowerCase()
+    if (drug[userInput]) {
+        response.json(drug[userInput])
+    }
+    else {
+        alert('That does not exist!')
+    }
 })
 
 
