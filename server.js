@@ -42,6 +42,14 @@ app.get('/main.js', (request, response) => {
 })
 
 
+
+// create get request for API
+app.get('/api', (request, response) => {
+    response.json(drugs)
+   
+})
+
+
 // create get request for API
 app.get('/api/:drug', (request, response) => {
     const userInput = request.params.drug.toLowerCase()
