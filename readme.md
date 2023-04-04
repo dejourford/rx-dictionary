@@ -18,3 +18,8 @@ This application is going to serve as the API for my eventual 100 Hours full-sta
 
 <h1>IMPROVEMENTS</h1>
 --refactor code if possible
+
+<h1>HOW TO USE</h1>
+use the api link below to fetch from
+<br>
+https://rx-drugs-api.herokuapp.com/api
